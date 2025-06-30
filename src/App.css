@@ -1,0 +1,190 @@
+.app {
+  scroll-behavior: smooth; /* Плавная прокрутка */
+   background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+.mainmenu_list {
+  display: flex;
+  gap: 1.5rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  color: var(--text-color);
+}
+
+
+
+/* Светлая тема (по умолчанию) */
+.light {
+  --bg-color: #ffffff;
+  --text-color: #0a0a0a;
+  --nav-bg: #cbc8f3;
+  --section-bg: #eae7ff;
+}
+
+/* Тёмная тема */
+.dark {
+  --bg-color: #121212;
+  --text-color: #f5f5f5;
+  --nav-bg: #1e1e1e;
+  --section-bg: #2d2d2d;
+}
+
+/* Применение переменных */
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: all 0.3s ease;
+}
+
+.header {
+  background-color: var(--nav-bg);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+  padding-left: 2rem;
+}
+
+section {
+  padding: 1rem 0;
+  scroll-margin-top: 60px;
+  width: 98vw; 
+  background-color: var(--section-bg);
+}
+
+.section-content {
+  margin: 0 auto; /* Центрирование */
+  padding: 0 2.5rem; /* Отступы по бокам */
+}
+
+.project-card {
+  background-color: var(--section-bg);
+  color: var(--text-color);
+  padding: 0;
+  margin: 0;
+}
+ h1 { 
+  color: var(--text-color);
+}
+
+h2 {
+  color: var(--text-color);
+}
+
+h3 {
+  color: var(--text-color);
+}
+
+p {
+  color: var(--text-color);
+}
+
+ul {
+  color: var(--text-color);
+}
+
+a {
+  color: var(--text-color);
+}
+
+.project-gallery {
+  position: relative;
+  margin: 1rem 0;
+  border-radius: 8px;
+  overflow: hidden;
+  width: 100%; /* Ширина на весь контейнер */
+}
+
+.gallery-image {
+  width: 100%; /* Ширина на весь контейнер */
+  height: auto;
+  max-height: 400px;
+  object-fit: contain; /* Сохраняет пропорции */
+}
+
+.gallery-controls {
+  position: relative;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 0.5rem;
+}
+
+.gallery-button {
+  color: var(--text-color);
+  border: none;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.2s ease;
+}
+
+.gallery-button:hover {
+  background: white;
+  transform: scale(1.1);
+}
+
+.image-counter {
+  color: white;
+  font-size: 0.9rem;
+}
+
+
+.simple-form {
+  max-width: 500px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid var(--text-color);
+  border-radius: 8px;
+}
+
+.simple-form div {
+  margin-bottom: 15px;
+}
+
+.simple-form label {
+  display: block;
+  margin-bottom: 5px;
+  color: var(--text-color);
+}
+
+.simple-form input,
+.simple-form textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  color: #1e1e1e;
+  background: white;
+}
+
+.simple-form button {
+  background: white;
+  color: #1e1e1e;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.error {
+  color: red;
+  margin-bottom: 15px;
+}
